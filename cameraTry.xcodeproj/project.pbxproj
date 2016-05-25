@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04343B0A1A8D784600C37A8A /* PhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04343B091A8D784600C37A8A /* PhotoEditViewController.swift */; };
 		045F0DCF1A81712B00528A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0DCE1A81712B00528A5F /* AppDelegate.swift */; };
 		045F0DD11A81712B00528A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0DD01A81712B00528A5F /* ViewController.swift */; };
 		045F0DD41A81712B00528A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F0DD21A81712B00528A5F /* Main.storyboard */; };
 		045F0DD61A81712B00528A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045F0DD51A81712B00528A5F /* Images.xcassets */; };
 		045F0DD91A81712B00528A5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045F0DD71A81712B00528A5F /* LaunchScreen.xib */; };
 		045F0DE51A81712B00528A5F /* cameraTryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0DE41A81712B00528A5F /* cameraTryTests.swift */; };
+		04EFA08F1A851340009AF3D1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EFA08E1A851340009AF3D1 /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04343B091A8D784600C37A8A /* PhotoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoEditViewController.swift; path = ../PhotoEditViewController.swift; sourceTree = "<group>"; };
 		045F0DC91A81712B00528A5F /* cameraTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045F0DCD1A81712B00528A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F0DCE1A81712B00528A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		045F0DDE1A81712B00528A5F /* cameraTryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cameraTryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045F0DE31A81712B00528A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F0DE41A81712B00528A5F /* cameraTryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraTryTests.swift; sourceTree = "<group>"; };
+		04EFA08E1A851340009AF3D1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EFA08F1A851340009AF3D1 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		045F0DC01A81712B00528A5F = {
 			isa = PBXGroup;
 			children = (
+				04EFA08E1A851340009AF3D1 /* Photos.framework */,
 				045F0DCB1A81712B00528A5F /* cameraTry */,
 				045F0DE11A81712B00528A5F /* cameraTryTests */,
 				045F0DCA1A81712B00528A5F /* Products */,
@@ -77,6 +83,7 @@
 		045F0DCB1A81712B00528A5F /* cameraTry */ = {
 			isa = PBXGroup;
 			children = (
+				04343B091A8D784600C37A8A /* PhotoEditViewController.swift */,
 				045F0DCE1A81712B00528A5F /* AppDelegate.swift */,
 				045F0DD01A81712B00528A5F /* ViewController.swift */,
 				045F0DD21A81712B00528A5F /* Main.storyboard */,
@@ -156,11 +163,13 @@
 		045F0DC11A81712B00528A5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "clement siess";
 				TargetAttributes = {
 					045F0DC81A81712B00528A5F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = EJKR6DJY6J;
 					};
 					045F0DDD1A81712B00528A5F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -214,6 +223,7 @@
 			files = (
 				045F0DD11A81712B00528A5F /* ViewController.swift in Sources */,
 				045F0DCF1A81712B00528A5F /* AppDelegate.swift in Sources */,
+				04343B0A1A8D784600C37A8A /* PhotoEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +285,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -336,8 +347,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = cameraTry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.cameraTry-csiess.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -346,8 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = cameraTry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.cameraTry-csiess.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -366,6 +381,7 @@
 				);
 				INFOPLIST_FILE = cameraTryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.cameraTry-csiess.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraTry.app/cameraTry";
 			};
@@ -381,6 +397,7 @@
 				);
 				INFOPLIST_FILE = cameraTryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.cameraTry-csiess.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraTry.app/cameraTry";
 			};
@@ -405,6 +422,7 @@
 				045F0DEA1A81712B00528A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045F0DEB1A81712B00528A5F /* Build configuration list for PBXNativeTarget "cameraTryTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				045F0DED1A81712B00528A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
